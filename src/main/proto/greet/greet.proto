@@ -43,6 +43,7 @@ message GreetEveryoneResponse {
 }
 
 service GreetService {
+  //unary
   rpc Greet(GreetRequest) returns (GreetResponse){};
 
   rpc GreetManyTimes(GreetManyTimesRequest) returns (stream GreetManyTimesResponse){};
