@@ -47,7 +47,7 @@ service GreetService {
   rpc Greet(GreetRequest) returns (GreetResponse){};
   //client-streaming
   rpc GreetManyTimes(GreetManyTimesRequest) returns (stream GreetManyTimesResponse){};
-
+  //serber-streaming
   rpc LongGreet(stream LongGreetRequest) returns (LongGreetResponse) {};
 
   rpc GreetEveryone(stream GreetEveryoneRequest) returns (stream GreetEveryoneResponse) {};
