@@ -45,7 +45,7 @@ message GreetEveryoneResponse {
 service GreetService {
   //unary
   rpc Greet(GreetRequest) returns (GreetResponse){};
-
+  //client-streaming
   rpc GreetManyTimes(GreetManyTimesRequest) returns (stream GreetManyTimesResponse){};
 
   rpc LongGreet(stream LongGreetRequest) returns (LongGreetResponse) {};
