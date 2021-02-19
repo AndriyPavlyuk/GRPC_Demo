@@ -49,6 +49,6 @@ service GreetService {
   rpc GreetManyTimes(GreetManyTimesRequest) returns (stream GreetManyTimesResponse){};
 
   rpc LongGreet(stream LongGreetRequest) returns (LongGreetResponse) {};
-
+reer
   rpc GreetEveryone(stream GreetEveryoneRequest) returns (stream GreetEveryoneResponse) {};
 }
